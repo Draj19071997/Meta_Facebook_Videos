@@ -28,5 +28,11 @@ public void tee1()
 	{
 		System.out.println("Check3");
 	}
+	
+	@Test
+	public void tee5()
+	{
+		System.out.println("Check3");
+	}
 }
 
