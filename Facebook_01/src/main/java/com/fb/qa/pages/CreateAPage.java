@@ -6,8 +6,14 @@ public class CreateAPage
 {
 	
 @Test
-public void tee()
+public void tee1()
 {
-	System.out.println("Check");
+	System.out.println("Check1");
+	
+	@Test
+	public void tee2()
+	{
+		System.out.println("Check2");
+	}
 }
 }
