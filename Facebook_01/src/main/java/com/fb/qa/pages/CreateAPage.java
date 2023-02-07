@@ -9,6 +9,7 @@ public class CreateAPage
 public void tee1()
 {
 	System.out.println("Check1");
+}
 	
 	@Test
 	public void tee2()
@@ -21,5 +22,11 @@ public void tee1()
 	{
 		System.out.println("Check3");
 	}
+	
+	@Test
+	public void tee4()
+	{
+		System.out.println("Check3");
+	}
 }
-}
+
