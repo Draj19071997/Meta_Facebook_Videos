@@ -3,7 +3,6 @@ package com.fb.qa.pages;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-
 import com.fb.qa.base.TestBase;
 
 public class LoginSceen extends TestBase
@@ -17,7 +16,7 @@ public class LoginSceen extends TestBase
 	@FindBy(xpath = "//h2[@class='_8eso']") WebElement FBHead;
 	@FindBy(linkText = "Create a Page") WebElement Create_a_Page_Btn;
 	
-	public LoginSceen() throws Exception 
+	 public LoginSceen() throws Exception 
 	{
 		PageFactory.initElements(driver, this);
 	}
@@ -40,7 +39,7 @@ public class LoginSceen extends TestBase
 	}
 	
 	//TC for ForgottenPW
-	public ForgottenPassword ForgottenPW_Click_Validation()
+	public ForgottenPassword ForgottenPW_Click_Validation() throws Exception
 	{
 		Forgotten_Password_Btn.click();
 		return new ForgottenPassword();

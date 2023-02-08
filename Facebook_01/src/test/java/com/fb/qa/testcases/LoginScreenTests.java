@@ -26,7 +26,7 @@ public class LoginScreenTests extends TestBase
 		login=new LoginSceen();
 	}
 	
-	@Test
+	@Test(priority = 1)
 	public void Validate_PageTitle() 
 	{
 		String ExpectedTitle=login.pagetitle();
@@ -34,20 +34,20 @@ public class LoginScreenTests extends TestBase
 		Assert.assertEquals(ActualTitle, ExpectedTitle, "Title is not matching");
 	}
 	
-	@Test
+	@Test(priority = 2)
 	public void Logo_Validation() {
 		Boolean LogoDisplayed= login.FBLogo_Validation();
 		Assert.assertEquals(true, LogoDisplayed);
 	}
 	
-	@Test
+	@Test(priority = 3)
 	public void Heading_validation() {
 		String ExpectedHeading= login.FBHead_String_Validation();
 		String ActualHeading="Facebook helps you connect and share with the people in your life.";
 		Assert.assertEquals(ExpectedHeading, ActualHeading, "Heading is incorrect/not available");
 	}
-	@Test
-	public void ForgottenPW_Click_Validate()
+	@Test(priority = 3)
+	public void ForgottenPW_Click_Validate() throws Exception
 	{
 		FPW=login.ForgottenPW_Click_Validation();
 	}
